@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Django Practice
     'pages',
+    'markdownx',
 ]
 
 MIDDLEWARE = [
