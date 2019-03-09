@@ -25,6 +25,10 @@ SECRET_KEY = '_9*-fb@s9o_m$-0(o_a_ogv6992khe=-@1rku406b!8iu*%z(c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+INTERNAL_IPS = [
+    '10.0.2.2',  # VirtualBox default gateway IP address
+]
+
 ALLOWED_HOSTS = []
 
 
@@ -41,6 +45,7 @@ INSTALLED_APPS = [
     # Django Practice
     'pages',
     'markdownx',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -124,3 +130,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Django Debug Toolbar — Django Debug Toolbar 1.11 documentation
+# https://django-debug-toolbar.readthedocs.io/en/latest/index.html
+SHOW_COLLAPSED = True
