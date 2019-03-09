@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 flake8 = "*"
 django-markdownx = "*"
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.7"
