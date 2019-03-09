@@ -130,3 +130,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Django Debug Toolbar — Django Debug Toolbar 1.11 documentation
+# https://django-debug-toolbar.readthedocs.io/en/latest/index.html
+SHOW_COLLAPSED = True
