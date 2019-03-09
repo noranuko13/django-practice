@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # Django Practice
     'pages',
     'markdownx',
+    'bootstrap4',
     'debug_toolbar',
 ]
 

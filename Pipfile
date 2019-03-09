@@ -10,6 +10,7 @@ django = "*"
 flake8 = "*"
 django-markdownx = "*"
 django-debug-toolbar = "*"
+django-bootstrap4 = "*"
 
 [requires]
 python_version = "3.7"
